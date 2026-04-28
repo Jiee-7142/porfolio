@@ -1839,3 +1839,19 @@ body:not(:hover) .cursor-ring { opacity: 0; }
   .lightbox-close { top: 12px; right: 12px; }
 }
 .canva-badge { background: linear-gradient(135deg, #00C4CC, #7B2FF7); }
+
+@media (max-width: 768px) {
+  .skills-grid, 
+  .skill-badges {
+    display: grid;
+    grid-template-columns: 1fr; /* This forces everything into 1 single column */
+    gap: 20px; /* Adds breathing room between the stacked items */
+    width: 100%;
+    padding: 0 15px; /* Adds a little space on the left and right edges of the phone */
+  }
+
+  .section-title {
+    font-size: 28px; /* Shrinks your main headings slightly so they don't break lines awkwardly */
+    text-align: center; 
+  }
+}
