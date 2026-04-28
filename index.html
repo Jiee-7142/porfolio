@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="AJ Lear Gillaco — IT Student, Graphic Designer & Front-End Developer based in Cebu, Philippines." />
+  <title>AJ Lear Gillaco | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="AJ Lear Gillaco Home">
+        <div class="logo-mark"><span>AJ</span></div>
+        <div class="logo-text">
+          <span class="logo-name">AJ Lear</span>
+          <span class="logo-role">Design &amp; Dev</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Primary navigation">
+        <a href="#home" class="nav-link" data-section="home">Home</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#works" class="nav-link" data-section="works">Works</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-nav-links" role="navigation" aria-label="Mobile navigation">
+        <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+        <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+        <a href="#works" class="mobile-nav-link" data-section="works">Works</a>
+        <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+        <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+        <a href="#contact" class="btn btn-primary mobile-cta">Let's Talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for Projects &amp; Internships
+      </div>
+      <h1 class="hero-heading reveal reveal-delay-1">
+        Crafting Digital<br />
+        <span class="gradient-text typewriter" id="typewriter">Experiences.</span>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Hi, I'm <strong>AJ Lear Gillaco</strong> a 2nd-year IT student, aspiring
+        <span class="highlight">Graphic Designer</span> &amp;
+        <span class="highlight">Front-End Developer</span> based in Bohol, Philippines.
+        I blend visual storytelling with clean code to build things that look good <em>and</em> work well.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#works" class="btn btn-primary btn-lg">View My Work</a>
+        <a href="#contact" class="btn btn-ghost btn-lg">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal reveal-delay-4">
+        <div class="stat">
+          <span class="stat-number">2+</span>
+          <span class="stat-label">Dev Projects</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Design Challenges</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Tech Skills</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator reveal reveal-delay-4" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">What I Use</span>
+      <h2 class="section-title">Tech Stack &amp; Skills</h2>
+      <p class="section-sub">
+        A growing toolkit spanning programming languages, design tools, and databases
+        that I use to bring ideas to life.
+      </p>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- Programming Languages -->
+      <div class="skill-category reveal">
+        <h3 class="skill-cat-title">Programming Languages</h3>
+        <div class="skill-badges">
+
+          <div class="skill-badge" data-level="75">
+            <div class="badge-icon c-badge">
+              <img src="assets/images/logo-c.png" alt="C" style="width:26px;height:26px;object-fit:contain;" />
+            </div>
+            <span class="badge-name">C</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 75%"></div></div>
+          </div>
+
+          <div class="skill-badge" data-level="80">
+            <div class="badge-icon java-badge">
+              <img src="assets/images/logo-java.png" alt="Java" style="width:26px;height:26px;object-fit:contain;" />
+            </div>
+            <span class="badge-name">Java</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 80%"></div></div>
+          </div>
+
+          <div class="skill-badge" data-level="70">
+            <div class="badge-icon py-badge">
+              <img src="assets/images/logo-python.png" alt="Python" style="width:26px;height:26px;object-fit:contain;" />
+            </div>
+            <span class="badge-name">Python</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 70%"></div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Web Technologies -->
+      <div class="skill-category reveal">
+        <h3 class="skill-cat-title">Web Technologies</h3>
+        <div class="skill-badges">
+
+          <div class="skill-badge" data-level="85">
+            <div class="badge-icon html-badge">
+              <img src="assets/images/logo-html.png" alt="HTML5" style="width:26px;height:26px;object-fit:contain;" />
+            </div>
+            <span class="badge-name">HTML5</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 85%"></div></div>
+          </div>
+
+          <div class="skill-badge" data-level="80">
+          <div class="badge-icon css-badge">
+            <img src="assets/images/logo-css.png" alt="CSS" style="width:26px;height:26px;object-fit:contain;" />
+          </div>
+            <span class="badge-name">CSS3</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 80%"></div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Database -->
+      <div class="skill-category reveal">
+        <h3 class="skill-cat-title">Database</h3>
+        <div class="skill-badges">
+
+          <div class="skill-badge" data-level="70">
+            <div class="badge-icon sql-badge">
+              <img src="assets/images/logo-mysql.png" alt="MySQL" style="width:26px;height:26px;object-fit:contain;" />
+            </div>
+            <span class="badge-name">MySQL</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 70%"></div></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Design & Animation -->
+      <div class="skill-category reveal">
+        <h3 class="skill-cat-title">Design &amp; Animation</h3>
+        <div class="skill-badges">
+
+          <div class="skill-badge" data-level="78">
+            <div class="badge-icon ps-badge">Ps</div>
+            <span class="badge-name">Photoshop</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 78%"></div></div>
+          </div>
+
+          <div class="skill-badge" data-level="72">
+            <div class="badge-icon ai-badge">Ai</div>
+            <span class="badge-name">Illustrator</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 72%"></div></div>
+          </div>
+
+          <div class="skill-badge" data-level="65">
+            <div class="badge-icon fl-badge">Fl</div>
+            <span class="badge-name">Flash/Animate</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 65%"></div></div>
+          </div>
+
+          <!-- ✅ Canva — now correctly placed as its own badge -->
+          <div class="skill-badge" data-level="82">
+            <div class="badge-icon canva-badge">
+              <img src="assets/images/logo-canva.png" alt="Canva" style="width:26px;height:26px;object-fit:contain;" />
+            </div>
+            <span class="badge-name">Canva</span>
+            <div class="badge-bar"><div class="badge-fill" style="--fill: 82%"></div></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /skills-grid -->
+  </div>
+</section>
+
+  <section class="works" id="works">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What I've Built &amp; Created</span>
+        <h2 class="section-title">My Works</h2>
+        <p class="section-sub">A curated collection of software projects, graphic design work, and animation exercises
+          that document my growth as a developer and designer.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="tablist" aria-label="Portfolio filter">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="software" role="tab" aria-selected="false">Software</button>
+        <button class="filter-btn" data-filter="design" role="tab" aria-selected="false">Design</button>
+        <button class="filter-btn" data-filter="animation" role="tab" aria-selected="false">Animation</button>
+        <button class="filter-btn" data-filter="quote" role="tab" aria-selected="false">Quote</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Card 1: Gym Booking System -->
+        <article class="gallery-card" data-category="software" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/gym-booking.png" alt="Gym Event Booking System screenshot" class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Software</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">Web Application</span><span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">Gym Event Booking System</h3>
+            <p class="card-desc">A full-featured event and membership management system for a gym facility. Allows
+              members to browse, register, and track fitness events, while admins manage schedules and attendance
+              records.</p>
+            <div class="card-tags"><span class="tag">Java</span><span class="tag">MySQL</span><span
+                class="tag">HTML</span><span class="tag">CSS</span></div>
+            <div class="card-footer">
+              <a href="https://github.com/Jiee-7142/Gym-Event-Booking-Management-System.git" target="_blank" rel="noopener"
+                class="btn btn-sm btn-ghost card-btn">
+                View on GitHub <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: TenantTrack -->
+        <article class="gallery-card" data-category="software" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/tenanttrack.png" alt="TenantTrack Boarding House Management System screenshot"
+              class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Software</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">Desktop Application</span><span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">TenantTrack — Boarding House Management System</h3>
+            <p class="card-desc">A boarding house management solution that streamlines tenant records, monthly billing,
+              payment tracking, and room occupancy — reducing paperwork for landlords and improving tenant
+              communication.</p>
+            <div class="card-tags"><span class="tag">Java</span><span class="tag">MySQL</span><span class="tag">Swing
+                UI</span></div>
+            <div class="card-footer">
+            <a href="https://github.com/Jiee-7142/TenantTrack-Boardning-House-Management-System.git" target="_blank" rel="noopener"
+              class="btn btn-sm btn-ghost card-btn">
+              View on GitHub <span aria-hidden="true">↗</span>
+            </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Social Media Poster -->
+        <article class="gallery-card" data-category="design" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/social-poster.png" alt="Social Media Poster design" class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Design</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">4-Week Design Challenge · Week 1</span><span
+                class="card-year">2024</span></div>
+            <h3 class="card-title">Social Media Poster</h3>
+            <p class="card-desc">A visually striking social media promotional poster created for the design challenge.
+              Focused on hierarchy, color contrast, and brand consistency for maximum scroll-stopping impact.</p>
+            <div class="card-tags"><span class="tag">Photoshop</span><span class="tag">Illustrator</span><span
+                class="tag">Branding</span></div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-ghost card-btn lightbox-trigger" data-img="assets/images/social-poster.png"
+                data-caption="Social Media Poster — 4-Week Design Challenge · Week 1" aria-label="Preview Social Media Poster">
+                View Design <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Infographic -->
+        <article class="gallery-card" data-category="design" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/inforgaphic-design.png" alt="Infographic Design — Suzuki Hayabusa"
+              class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Design</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">4-Week Design Challenge · Week 2</span><span
+                class="card-year">2024</span></div>
+            <h3 class="card-title">Infographic Design</h3>
+            <p class="card-desc">An information-dense yet visually clean infographic that translates complex data into
+              an easy-to-digest visual format. Emphasis on data visualization principles and clear layout flow.</p>
+            <div class="card-tags"><span class="tag">Illustrator</span><span class="tag">Data Viz</span><span
+                class="tag">Typography</span></div>
+          <div class="card-footer">
+            <button class="btn btn-sm btn-ghost card-btn lightbox-trigger" data-img="assets/images/inforgaphic-design.png"
+              data-caption="Infographic Design — 4-Week Design Challenge · Week 2" aria-label="Preview Infographic Design">
+              View Design <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Personal Logo -->
+        <article class="gallery-card" data-category="design" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/personal logo.png" alt="Personal Logo Design — NODE by JIE"
+              class="card-img card-img-contain" />
+            <div class="card-overlay"><span class="card-category-tag">Design</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">4-Week Design Challenge · Week 3</span><span
+                class="card-year">2024</span></div>
+            <h3 class="card-title">Personal Logo Design</h3>
+            <p class="card-desc">A personal brand identity mark built around my initials and creative vision. Designed
+              with versatility in mind — clean on dark and light backgrounds, scalable for digital and print use.</p>
+            <div class="card-tags"><span class="tag">Illustrator</span><span class="tag">Brand Identity</span><span
+                class="tag">Vector Art</span></div>
+          <div class="card-footer">
+            <button class="btn btn-sm btn-ghost card-btn lightbox-trigger" data-img="assets/images/personal logo.png"
+              data-caption="Personal Logo Design — NODE by Jie · 4-Week Design Challenge · Week 3"
+              aria-label="Preview Personal Logo">
+              View Design <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          </div>
+        </article>
+
+        <!-- Card 6: Quote Design -->
+        <article class="gallery-card" data-category="quote" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/typography-quote.png" alt="Typography Quote Design" class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Quote</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">Quote Design Activity</span><span
+                class="card-year">2024</span></div>
+            <h3 class="card-title">Typography Quote Design</h3>
+            <p class="card-desc">A typographic design activity exploring expressive font pairings, layout composition,
+              and mood-setting through text. Each piece turns a meaningful quote into a visual experience.</p>
+            <div class="card-tags"><span class="tag">Photoshop</span><span class="tag">Typography</span><span
+                class="tag">Layout Design</span></div>
+          <div class="card-footer">
+            <button class="btn btn-sm btn-ghost card-btn lightbox-trigger" data-img="assets/images/typography-quote.png"
+              data-caption="Typography Quote Design — Quote Design Activity" aria-label="Preview Typography Quote Design">
+              View Design <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          </div>
+        </article>
+
+        <!-- Card 7: Motion Tween -->
+        <article class="gallery-card animation-card" data-category="animation" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/motion-tween.png" alt="Motion Tween Animation preview" class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Animation</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">Animation Exercise</span><span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">Motion Tween Animation</h3>
+            <p class="card-desc">A motion tween exercise demonstrating smooth positional and scale transitions between
+              keyframes. Created in Adobe Animate, exploring easing curves and object interpolation.</p>
+            <div class="card-tags"><span class="tag">Adobe Animate</span><span class="tag">Motion Tween</span></div>
+            <div class="card-footer">
+              <a href="https://drive.google.com/file/d/1jWK3jEmJtJO5UM27pCKp3jiB9BkblS9i/view?usp=drive_link"
+                target="_blank" rel="noopener" class="btn btn-sm btn-ghost card-btn"
+                aria-label="Watch Motion Tween on Google Drive">Watch on Drive <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Frame-by-Frame -->
+        <article class="gallery-card animation-card" data-category="animation" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/frame-by-frame.png" alt="Frame-by-Frame Animation preview" class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Animation</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">Animation Exercise</span><span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">Frame-by-Frame Animation</h3>
+            <p class="card-desc">A hand-drawn frame-by-frame animation sequence built one frame at a time. This exercise
+              develops an understanding of timing, squash-and-stretch, and the fundamentals of traditional animation
+              techniques.</p>
+            <div class="card-tags"><span class="tag">Adobe Animate</span><span class="tag">Frame-by-Frame</span></div>
+            <div class="card-footer">
+              <a href="https://drive.google.com/file/d/1pijDeMjikq8mPVWeS0FN-wVp2d73IfZy/view?usp=drive_link"
+                target="_blank" rel="noopener" class="btn btn-sm btn-ghost card-btn"
+                aria-label="Watch Frame-by-Frame animation">Watch on Drive <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9: Shape Tween -->
+        <article class="gallery-card animation-card" data-category="animation" role="tabpanel">
+          <div class="card-img-wrap">
+            <img src="assets/images/shape-tween.png" alt="Shape Tween Animation preview" class="card-img" />
+            <div class="card-overlay"><span class="card-category-tag">Animation</span></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span class="card-type">Animation Exercise</span><span class="card-year">2024</span>
+            </div>
+            <h3 class="card-title">Shape Tween Animation</h3>
+            <p class="card-desc">A shape morphing animation using Flash/Animate's shape tween feature. Explores organic
+              transitions between distinct vector shapes — demonstrating control over morph points and transformation
+              timing.</p>
+            <div class="card-tags"><span class="tag">Adobe Animate</span><span class="tag">Shape Tween</span><span
+                class="tag">Vector</span></div>
+            <div class="card-footer">
+              <a href="https://drive.google.com/file/d/1uS5OusYmrHg7EiiOtPnQ47phpl8rxuKA/view?usp=drive_link"
+                target="_blank" rel="noopener" class="btn btn-sm btn-ghost card-btn"
+                aria-label="Watch Shape Tween animation">Watch on Drive <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /gallery-grid -->
+
+      <div class="no-results" id="noResults" aria-live="polite" hidden>
+        <span class="no-results-icon" aria-hidden="true">🔍</span>
+        <p>No items found in this category yet.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-visual reveal">
+          <div class="avatar-wrap">
+            <img src="assets/images/profile.jpg" alt="AJ Lear Gillaco" class="avatar-img" />
+            <div class="avatar-glow" aria-hidden="true"></div>
+          </div>
+      <div class="quick-facts">
+        <div class="quick-fact">
+          <div>
+            <strong>2nd Year IT Student</strong>
+            <span>BISU Balilihan Campus</span>
+          </div>
+        </div>
+        <div class="quick-fact">
+          <div>
+            <strong>Graphic Designer</strong>
+            <span>Visual Communication</span>
+          </div>
+        </div>
+        <div class="quick-fact">
+          <div>
+            <strong>Front-End Developer</strong>
+            <span>HTML · CSS · JS</span>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title about-title">I Build &amp; Design with Purpose.</h2>
+          <p class="about-text">My name is <strong>AJ Lear Gillaco</strong>, and I'm on a mission to bridge the gap
+            between design and technology. As an IT student at my second year, I've chosen to pursue both disciplines
+            simultaneously because I believe the best digital products are ones where the engineering and the aesthetics
+            are inseparable.</p>
+          <p class="about-text">On the <span class="highlight">design side</span>, I work with Adobe Photoshop and
+            Illustrator to create posters, brand identities, infographics, and visual content. On the <span
+              class="highlight">development side</span>, I build systems using Java, Python, and web technologies with
+            a growing passion for front-end interfaces that feel as good as they look.</p>
+          <p class="about-text">I see every project whether it's a management system or a social media poster as a
+            design problem first. My creative goal is to eventually work at the intersection of UI/UX design and
+            front-end engineering, crafting experiences that are both <em>functional</em> and <em>beautiful</em>.</p>
+          <blockquote class="about-quote">"Good design is not just what it looks like it's how it works and how it
+            makes people feel."</blockquote>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">Work With Me</a>
+            <a href="assets/resume/AJLear_Gillaco_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener"
+              download aria-label="Download AJ Lear's resume PDF">Download Résumé ↓</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Whether you have a project idea, collaboration opportunity, or just want to say hello —
+          my inbox is always open.</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-links reveal">
+          <a href="mailto:ajleargillaco@gmail.com" class="contact-link-card" aria-label="Send email">
+            <div class="contact-icon-wrap"><span class="contact-icon" aria-hidden="true">✉️</span></div>
+            <div class="contact-link-info"><strong>Email</strong><span>ajleargillaco@gmail.com</span></div>
+            <span class="contact-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="https://linkedin.com/in/aj-lear-gillaco" target="_blank" rel="noopener" class="contact-link-card"
+            aria-label="View LinkedIn profile">
+            <div class="contact-icon-wrap linkedin-icon"><span class="contact-icon" aria-hidden="true">in</span></div>
+            <div class="contact-link-info"><strong>LinkedIn</strong><span>linkedin.com/in/aj-lear-gillaco</span></div>
+            <span class="contact-arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="assets/resume/AJLear_Gillaco_Resume.pdf" target="_blank" rel="noopener" class="contact-link-card"
+            aria-label="Download resume PDF" download>
+            <div class="contact-icon-wrap resume-icon"><span class="contact-icon" aria-hidden="true">📄</span></div>
+            <div class="contact-link-info"><strong>Résumé / CV</strong><span>Download PDF</span></div>
+            <span class="contact-arrow" aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-group">
+              <label class="form-label" for="contactName">Your Name</label>
+              <input type="text" id="contactName" class="form-input" placeholder="e.g. Maria Santos"
+                autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="e.g. maria@email.com"
+                autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" class="form-input" placeholder="e.g. Collaboration Opportunity" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message</label>
+              <textarea id="contactMessage" class="form-input form-textarea" rows="5"
+                placeholder="Tell me about your project or idea..."></textarea>
+            </div>
+            <button type="button" class="btn btn-primary btn-full" id="formSubmitBtn">Send Message ✦</button>
+            <div class="form-success" id="formSuccess" hidden role="alert" aria-live="assertive">
+              <span aria-hidden="true">✅</span> Message sent! I'll get back to you soon.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo" aria-label="Back to top">
+            <div class="logo-mark"><span>AJ</span></div>
+            <div class="logo-text">
+              <span class="logo-name">AJ Lear</span>
+              <span class="logo-role">Design &amp; Dev</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Building bridges between design and development.</p>
+        </div>
+        <div class="footer-nav" aria-label="Footer navigation">
+          <a href="#home" class="footer-link">Home</a>
+          <a href="#skills" class="footer-link">Skills</a>
+          <a href="#works" class="footer-link">Works</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="mailto:ajleargillaco@gmail.com" class="social-link" aria-label="Email">✉</a>
+          <a href="https://linkedin.com/in/aj-lear-gillaco" target="_blank" rel="noopener" class="social-link"
+            aria-label="LinkedIn">in</a>
+          <a href="https://github.com/Jiee-7142" target="_blank" rel="noopener" class="social-link"
+            aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyrightYear"></span> AJ Lear Gillaco. All rights reserved. <span class="footer-sep"
+            aria-hidden="true">·</span> Designed &amp; built with passssion from Bohol, Philippines.</p>
+        <a href="#home" class="back-to-top" aria-label="Back to top of page">↑ Top</a>
+      </div>
+    </div>
+  </footer>
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox-overlay" id="lightboxOverlay" aria-modal="true" role="dialog" aria-label="Image preview" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">✕</button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+  <button class="lightbox-next" id="lightboxNext" aria-label="Next image">›</button>
+  <div class="lightbox-content">
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
